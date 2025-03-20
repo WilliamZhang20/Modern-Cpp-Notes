@@ -7,9 +7,9 @@ bool compare(T a, T b) {
 }
 
 template<>
-bool compare<float>(float a, float b) {
+bool compare<float>(float a, float b) { // partial specialization used
     std::cout << "call special. ";
-    return std::fabs(a - b) < 1e-9;
+    return std::fabs(a - b) < 1e-9; // need fabs due to imprecisions in computer floating point number storage, so we set expect a small difference rather than perfect equality
 }
 
 int main() {
