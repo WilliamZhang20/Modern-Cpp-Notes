@@ -10,4 +10,6 @@ This list includes categories such as:
 - Functional Paradigms (e.g. lambdas, functional templates)
 - Memory Management, e.g. memory pools, rvalues/lvalues, RAII
 
-Overall, tending to follow [this](https://federico-busato.github.io/Modern-CPP-Programming/) amazing FREE guide.
+Overall, am following [this](https://federico-busato.github.io/Modern-CPP-Programming/) amazing FREE guide.
+
+At the same time, I'll add detailed code annotations explaining the expected output, especially the reasons behind the observed behavior. 
