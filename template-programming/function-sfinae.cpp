@@ -1,5 +1,8 @@
 #include <iostream>
 #include <type_traits>
+/*
+SUMMARY: used type traits of functions and enable_if to control deduction list
+*/
 
 template<typename T>
 typename std::enable_if<std::is_integral<T>::value>::type
