@@ -114,6 +114,7 @@ Generator<T> range(T first, const T last)
  
 int main()
 {
+    // permits a pipeline/asynchronous generator
     for (const char i : range(65, 91))
         std::cout << i << ' ';
     std::cout << '\n';
