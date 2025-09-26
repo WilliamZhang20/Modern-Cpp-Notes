@@ -74,10 +74,9 @@ int main() {
         for(int i = 0; i < N; ++i) {
             void* mem = pool.allocate();
             // construct at allocated spot in memory with placement new
-            vec.push_back(new(mem) MyObject(i, i+1, i+2));
+            vec.emplace_back(new(mem) MyObject(i, i+1, i+2));
         }
         for(auto ptr : vec) {
-            ptr->~MyObject(); // manually destructor
             pool.deallocate(ptr); // deallocate in "user-defined" space
         }
         auto end = std::chrono::high_resolution_clock::now();
